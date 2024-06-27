@@ -10,7 +10,7 @@ const useGetMessages = () => {
     const getMessages = async () => {
       try {
         const res = await fetch(
-          `http://localhost:5000/api/messages/${selectedConvoId._id}`,
+          `https://chatbook-pal.onrender.com/api/messages/${selectedConvoId._id}`,
           {
             method: "GET",
             headers: { "Content-type": "application/json" },

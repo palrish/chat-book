@@ -9,7 +9,7 @@ const useSendMessage = () => {
     setLoading(true);
     try {
       const res = await fetch(
-        `http://localhost:5000/api/messages/send/${selectedConvoId._id}`,
+        `https://chatbook-pal.onrender.com/api/messages/send/${selectedConvoId._id}`,
         {
           method: "POST",
           headers: { "Content-type": "application/json" },

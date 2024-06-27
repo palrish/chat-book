@@ -8,7 +8,7 @@ const useLogout = () => {
   const logout = async () => {
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:5000/api/auth/logout", {
+      const res = await fetch("https://chatbook-pal.onrender.com/api/auth/logout", {
         method: "POST",
         headers: { "Content-type": "application/json" },
         credentials: "include",
